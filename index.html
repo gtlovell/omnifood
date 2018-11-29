@@ -1,284 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Garrett Lovell | NYC Developer & Designer</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Arapey:100,300,400,700,900"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,600"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400"
-      rel="stylesheet"
-    />
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="omnifood-vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="omnifood-vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="omnifood-vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="omnifood-vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="omnifood-resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="omnifood-resources/css/queries.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic">
+        <title>Omnifood</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="omnifood-resources/img/logo-white.png" alt="Omnifood Logo" class="logo">
+                    <img src="omnifood-resources/img/logo.png" alt="Omnifood Logo" class="logo-black">
+                    <ul class="main-nav js--main-nav">
+                        <li><a class="" href="#features">Food delivery</a></li>
+                        <li><a class="" href="#apps">How it works</a></li>
+                        <li><a class="" href="#locations">Our cities</a></li>
+                        <li><a class="" href="#plans">Sign up</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Goodbye junk food.<br>Hello healthy!</h1>
+                <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
+            </div>
+        </header>
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+        <section class="section-features js--section-features" id="features">
+            <div class="row">
+                <h2>Get food fast &mdash; not fast food.</h2>
+                <p class="long-copy">
+                    Hello, we&#8217;re Omnifood, your new premium food delivery service. We know you&#8217;re always busy. No time for cooking. So let us take care of that, we&#8217;re really good at it, we promise!
+                </p>
+            </div>
 
-  <body>
-    <header>
-      <a href="#"> <h2>Garrett Lovell</h2> </a>
-      <nav class="cl-effect-6">
-        <a href="#skills">Work</a> <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+            <div class="row js--wp-1">
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-infinite-outline icon-big"></i>
+                    <h3>Up to 365 days/year</h3>
+                    <p>
+                        Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
+                    </p>
+                </div>
 
-    <section class="hero">
-      <div class="hero-content-area">
-        <div class="line-1"><h1>I like awesome stuff.</h1></div>
-        <div class="line-2"><h1>You like awesome stuff.</h1></div>
-        <div class="line-3"><h1>Let's make awesome stuff together.</h1></div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-stopwatch-outline icon-big"></i>
+                    <h3>Ready in 20 minutes</h3>
+                    <p>
+                        You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+                    </p>
+                </div>
 
-        <svg class="arrows">
-          <path class="a1" d="M0 0 L30 32 L60 0"></path>
-          <path class="a2" d="M0 20 L30 52 L60 20"></path>
-          <path class="a3" d="M0 40 L30 72 L60 40"></path>
-        </svg>
-      </div>
-    </section>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-nutrition-outline icon-big"></i>
+                    <h3>100% organic</h3>
+                    <p>
+                        All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+                    </p>
+                </div>
 
-    <!-- Portfolio Section -->
-    <section class="logos">
-      <h3 class="blue-title">My Work</h3>
-      <hr class="hr-black" />
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-cart-outline icon-big"></i>
+                    <h3>Order anything</h3>
+                    <p>
+                        We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
+                    </p>
+                </div>
+            </div>
+        </section>
 
-      <ul class="portfolio-grid">
-        <li class="portfolio-item">
-          <a class="portfolio-link" href="">
-            <img src="img/natours.png" />
-            <h4>Nature Tours Site</h4>
-          </a>
-        </li>
-        <li class="portfolio-item">
-          <a class="portfolio-link" href="">
-            <img src="img/omnifood.png" />
-            <h4>Food Delivery Site</h4>
-          </a>
-        </li>
-        <li class="portfolio-item">
-          <a class="portfolio-link" href="">
-            <img src="img/trillo.png" />
-            <h4>Travel Site</h4>
-          </a>
-        </li>
-        <li class="portfolio-item">
-          <a class="portfolio-link" href="">
-            <img src="img/nexter.png" />
-            <h4>Real Estate Site</h4>
-          </a>
-        </li>
-        <li class="portfolio-item">
-          <a class="portfolio-link" href="">
-            <img src="img/natours.png" />
-            <h4>Food Delivery Site</h4>
-          </a>
-        </li>
-        <li class="portfolio-item">
-          <a class="portfolio-link" href="">
-            <img src="img/natours.png" />
-            <h4>Food Delivery Site</h4>
-          </a>
-        </li>
-      </ul>
-    </section>
+        <section class="section-meals">
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="omnifood-resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+                    </figure>
+                </li>
 
-    <!-- Logo Grid Section -->
-    <section class="logos">
-      <h3 id="skills" class="blue-title">Skills That Pay the Bills</h3>
-      <hr class="hr-black" />
+                <li>
+                    <figure class="meal-photo">
+                        <img src="omnifood-resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+                    </figure>
+                </li>
 
-      <ul class="grid">
-        <li>
-          <i class="fab fa-html5 fa-4x html5"></i>
-          <h4>HTML5</h4>
-        </li>
-        <li>
-          <i class="fab fa-css3-alt fa-4x css3"></i>
-          <h4>CSS3</h4>
-        </li>
-        <li>
-          <i class="fab fa-sass fa-4x sass"></i>
-          <h4>SASS</h4>
-        </li>
-        <li>
-          <i class="fab fa-js fa-4x js"></i>
-          <h4>JavaScript</h4>
-        </li>
-        <!--
-          <li>
-            <img src="img/typescript-logo.png" class="fab typescript-logo" />
-            <h4>TypeScript</h4>
-          </li>
-        -->
-        <li>
-          <i class="fab fa-react fa-4x react"></i>
-          <h4>React</h4>
-        </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="omnifood-resources/img/3.jpg" alt="Chicken breast steak with vegetables">
+                    </figure>
+                </li>
 
-        <!--
-          <li>
-            <img src="img/redux-logo.png" class="fab redux-logo" />
-            <h4>Redux</h4>
-          </li>
-        -->
+                <li>
+                    <figure class="meal-photo">
+                        <img src="omnifood-resources/img/4.jpg" alt="Autumn pumpkin soup">
+                    </figure>
+                </li>
+            </ul>
 
-        <li>
-          <img src="img/gatsby-logo.png" class="fab gatsby-logo" />
-          <h4>Gatsby</h4>
-        </li>
-        <li>
-          <img src="img/python-logo.png" class="fab python-logo" />
-          <h4>Python</h4>
-        </li>
-        <li>
-          <i class="fab fa-node-js fa-4x node"></i>
-          <h4>NodeJS</h4>
-        </li>
-        <li id="graphql">
-          <img src="img/graphql-logo.png" class="fab graphql-logo" />
-          <h4>GraphQL</h4>
-        </li>
-        <li id="graphql">
-          <img src="img/apollo-logo.png" class="fab apollo-logo" />
-          <h4>Apollo</h4>
-        </li>
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="omnifood-resources/img/5.jpg" alt="Paleo beef steak with vegetables">
+                    </figure>
+                </li>
 
-        <li>
-          <i class="fab fa-docker fa-4x docker"></i>
-          <h4>Docker</h4>
-        </li>
-        <!--
-          <li>
-            <i class="fab fa-aws fa-4x aws"></i>
-            <h4>Amazon Web Services</h4>
-          </li>
-        -->
+                <li>
+                    <figure class="meal-photo">
+                        <img src="omnifood-resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
+                    </figure>
+                </li>
 
-        <!--
-          <li>
-            <img src="img/tensorflow-logo.png" class="fab tensorflow-logo" />
-            <h4>TensorFlow</h4>
-          </li>
-          <li>
-            <img src="img/brain-logo.png" class="fab brain-logo" />
-            <h4>Machine Learning</h4>
-          </li>
-          <li>
-            <img src="img/mongodb-logo.png" class="fab mongo-logo" />
-            <h4>MongoDB</h4>
-          </li>
-        -->
-        <li>
-          <img src="img/Shopify_logo_icon.png" class="fab shopify-logo" />
-          <h4>Shopify</h4>
-        </li>
-        <li>
-          <i class="fab fa-wordpress fa-4x wordpress"></i>
-          <h4>Wordpress</h4>
-        </li>
-        <li>
-          <i class="fab fa-gulp fa-4x gulp"></i>
-          <h4>Gulp</h4>
-        </li>
-        <li>
-          <i class="fab fa-git fa-4x git"></i>
-          <h4>Git</h4>
-        </li>
-      </ul>
-    </section>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="omnifood-resources/img/7.jpg" alt="Burger with cheddar and bacon">
+                    </figure>
+                </li>
 
-    <!-- GitHub Section -->
-    <section class="github">
-      <h3 id="github" class="title">Projects I'm Working On</h3>
-      <hr class="hr-black" />
-      <div id="root"></div>
-    </section>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="omnifood-resources/img/8.jpg" alt="Granola with cherries and strawberries ">
+                    </figure>
+                </li>
+            </ul>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <h3 class="title">About me</h3>
-      <hr />
-      <!-- //TODO Make links for guitar and Rumpy -->
-      <p>
-        Hi, I'm Garrett, and I'm a web developer and graphic designer. When I'm
-        not whipping up digital delicacies I'm either playing guitar or hanging
-        out with the fam. I'm married to an amazing woman, and we have a dog
-        named Rumpy. They are both super cool.
-      </p>
-    </section>
+        <section class="section-steps" id="apps">
+            <div class="row">
+                <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 steps-box">
+                    <img src="omnifood-resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
+                </div>
 
-    <!-- Footer Section -->
-    <footer>
-      <p id="copy">&copy; 2018 Garrett Lovell</p>
-      <p>
-        <a
-          href="https://www.youtube.com/watch?v=VD6TfEWtIYI"
-          target="_blank"
-          id="an-link"
-          >Here</a
-        >
-        is a gift for making it this far.
-      </p>
-      <ul>
-        <li>
-          <a href="http://www.github.com/gtlovell" target="_blank">
-            <i class="fab fa-github fa-2x"></i>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.linkedin.com/in/garrett-lovell" target="_blank">
-            <i class="fab fa-linkedin-in fa-2x"></i>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.instagram.com/garrett.lovell" target="_blank">
-            <i class="fab fa-instagram fa-2x"></i>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:garrett@garrettlovell.com" target="_blank">
-            <i class="fas fa-envelope fa-2x"></i>
-          </a>
-        </li>
-      </ul>
-    </footer>
+                <div class="col span-1-of-2 steps-box">
+                    <div class="works-step">
+                        <div>1</div>
+                        <p>
+                            Choose the subscription plan that best fits your needs and sign up today.
+                        </p>
+                    </div>
+                    <div class="works-step">
+                        <div>2</div>
+                        <p>
+                            Order your delicious meal using our mobile app or website. Or you can even call us!
+                        </p>
+                    </div>
+                    <div class="works-step">
+                        <div>3</div>
+                        <p>
+                            Enjoy your meal after less than 20 minutes. See you the next time!
+                        </p>
+                    </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+                    <a href="#" class="btn-app"><img src="omnifood-resources/img/download-app.svg" alt="App Store Button"></a>
+                    <a href="#" class="btn-app"><img src="omnifood-resources/img/download-app-android.png" alt="Play Store Button"></a>
+                </div>
+            </div>
+        </section>
 
-    <script src="modernizr.custom.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+        <section class="section-cities" id="locations">
+            <div class="row">
+                <h2>We're currently in these cities</h2>
+            </div>
+            <div class="row js--wp-3">
+                <div class="col span-1-of-4 box">
+                    <img src="omnifood-resources/img/lisbon-3.jpg" alt="Lisbon">
+                    <h3>Lisbon</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        1600+ happy eaters
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        60+ top chefs
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@omnifood_lx</a>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <img src="omnifood-resources/img/san-francisco.jpg" alt="Lisbon">
+                    <h3>San Francisco</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        3700+ happy eaters
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        160+ top chefs
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@omnifood_sf</a>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <img src="omnifood-resources/img/berlin.jpg" alt="Lisbon">
+                    <h3>Berlin</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        2300+ happy eaters
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        110+ top chefs
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@omnifood_berlin</a>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <img src="omnifood-resources/img/london.jpg" alt="Lisbon">
+                    <h3>London</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        1200+ happy eaters
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        50+ top chefs
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@omnifood_london</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-testimonials">
+            <div class="row">
+                <h2>Our customers can't live without us</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote cite="#">
+                        Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+                        <cite><img src="omnifood-resources/img/customer-1.jpg">Alberto Duncan</cite>
+                    </blockquote>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <blockquote cite="#">
+                        Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
+                        <cite><img src="omnifood-resources/img/customer-2.jpg">Joana Silva</cite>
+                    </blockquote>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <blockquote cite="#">
+                        I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                        <cite><img src="omnifood-resources/img/customer-3.jpg">Milton Chapman</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-plans js--section-plans" id="plans">
+            <div class="row">
+                <h2>START EATING HEALTHY TODAY</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="plan-box js--wp-4">
+                        <div>
+                            <h3>Premium</h3>
+                            <p class="plan-price">$399 <span>/ month</span></p>
+                            <p class="plan-price-meal">That&#8217;s only $13.30 per meal</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal every day</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-full">Sign Up Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Pro</h3>
+                            <p class="plan-price">$149 <span>/ month</span></p>
+                            <p class="plan-price-meal">That&#8217;s only $13.30 per meal</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal 10 days/month</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">Sign Up Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Starter</h3>
+                            <p class="plan-price">$19 <span>/ meal</span></p>
+                            <p class="plan-price-meal"><span>&nbsp;</span></p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-close-empty icon-small"></i></li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">Sign Up Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-form">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for"find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search">Search Engine</option>
+                                <option value="ad">Advertisment</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked> Yes, please
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <div class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2018 by Omnifood. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+        <script src="omnifood-vendors/js/jquery.waypoints.min.js"></script>
+        <script src="omnifood-resources/js/script.js"></script>
+    </body>
 </html>
